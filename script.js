@@ -34,3 +34,13 @@ function operate(op, a, b) {
             break;
     }
 }
+
+let display = document.querySelector("#display");
+
+let digits = document.querySelectorAll(".digit");
+digits.forEach((digit) => {
+    digit.addEventListener("click", () => {
+        displayText += digit.textContent;
+        display.textContent = displayText;
+    });
+});
