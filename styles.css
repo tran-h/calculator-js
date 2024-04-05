@@ -7,7 +7,7 @@
     display: flex;
 }
 
-#zero {
+#zero, #clear {
     flex: 2;
 }
 
@@ -28,4 +28,9 @@ button {
     justify-content: flex-end;
     align-items: center;
     padding-right: 8px;
+    margin: 4px;
+}
+
+.operator:focus {
+    background-color: #b8b8b8;
 }
